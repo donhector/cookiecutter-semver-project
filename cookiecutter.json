@@ -1,6 +1,6 @@
 {
   "project_name": "Your project name",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('.', '-').trim() }}",
+  "project_slug": "{{ cookiecutter.project_name.lower()|trim()|replace(' ', '-')|replace('.', '-') }}",
   "project_description":"Your project description",
   "pipenv_python_version": "3.9",
   "github_username": "donhector",
