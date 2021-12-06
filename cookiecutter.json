@@ -1,0 +1,11 @@
+{
+  "project_name": "Your project name",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('.', '-').trim() }}",
+  "project_description":"Your project description",
+  "pipenv_python_version": "3.9",
+  "github_username": "donhector",
+  "github_email": "2475379+donhector@users.noreply.github.com",
+  "github_repo_owner": "{{ cookiecutter.github_username }}",
+  "github_repo_name": "{{ cookiecutter.project_slug }}",
+  "_copy_without_render": [".github/workflows/*"]
+}

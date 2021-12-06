@@ -4,6 +4,9 @@ define hr
 	@printf '%.s─' $$(seq 1 $$(tput cols))
 endef
 
+
+.PHONY: all install clean lint test update security run
+
 all: install security test
 
 install:
@@ -25,12 +28,12 @@ clean:
 ## only run the linter, no testing
 lint:
 	$(call hr)
-	@pipenv run molecule lint
+	@echo "Your code linting commands here"
 
 ## molecule test already does linting
 test:
 	$(call hr)
-	@pipenv run molecule test --all
+	@echo "Your code testing commands here"
 
 ## Update pipenv dependencies along with pre-commit
 update:
@@ -46,6 +49,4 @@ security:
 ## Run just the role
 run:
 	$(call hr)
-	@pipenv run molecule converge
-
-.PHONY: all install lint test update clean security run
+	@echo "Your code running command"

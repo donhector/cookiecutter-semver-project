@@ -41,25 +41,4 @@ jobs:
             @semantic-release/changelog
             @semantic-release/git
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_REPO_FULL }}
-
-      #############################
-      # Release to Ansible Galaxy
-      #############################
-
-      - name: Set up Python 3.x
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
-
-      - name: Install Ansible
-        run: pip3 install --no-compile ansible-base
-
-      - name: Show Ansible version
-        run: ansible --version
-
-      - name: Release to Ansible Galaxy
-        run: >-
-          ansible-galaxy role import
-          --api-key ${{ secrets.GALAXY_API_KEY }}
-          ${GITHUB_REPOSITORY%%/*} ${GITHUB_REPOSITORY#*/}
+          GITHUB_TOKEN: ${{ secrets.PAT }}

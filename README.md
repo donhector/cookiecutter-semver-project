@@ -1,93 +1,25 @@
-Ansible role: crossplatform
+{{ cookiecutter.project_name }}
 =========
 
-[![Ansible Galaxy role badge][galaxy-role-badge]][galaxy-link]
-[![Ansible Galaxy quality badge][galaxy-quality-badge]][galaxy-link]
-[![CI badge][ci-badge]][ci-link]
-[![MIT licensed][mit-badge]][mit-link]
-![Python version][python-badge]
-[![pre-commit badge][pre-commit-badge]][pre-commit-link]
+[![CI badge](https://github.com/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.github_repo_name }}/actions/workflows/ci.yml/badge.svg)](https://github.com/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.github_repo_name }}/actions/workflows/ci.yml)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.github_repo_name }}/main/LICENSE)
+![Python version](https://img.shields.io/github/pipenv/locked/python-version/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.github_repo_name }}?color=green)
+[![pre-commit badge](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![semantic-release](https://img.shields.io/badge/semantic--release-conventionalcommits-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
-[![commitizen friendly][commitizen-badge]][commitizen-link]
+[![commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
 [![gitlint enabled](https://img.shields.io/badge/gitlint-enabled-orange)](https://github.com/jorisroovers/gitlint)
 
 Description
 ------------
 
-Example of a dummy cross-platform Ansible role. The purpose of this repo was to:
-
-- Illustrate handling OS specific vars and tasks in Ansible roles
-- Illustrate how a role can be tested across platforms using Molecule
-- Illustrate the use of some nice Github features:
-  - Github Actions: To build a CI/CD pipelines for the role.
-  - Bots: To manage vulnearble dependencies (ie. dependabot) and pull requests (ie. stale)
-  - Issue Templates: To standarize community raised issues/questions
-- Illustrate the use of good software developement practices:
-  - Virtual environments with pipenv
-  - enforcing coding standards:
-    - linters
-    - editorconfig
-    - pre-commit checks
-  - use of Makefile to provide a common interface to usual tasks such as 'lint', 'test' and hide complexity for end users.
-  - Commit message standarization and enforcement (ie: conventional commits via commitizen + pre-commit validations)
-  - Semantic versioning and releasing (ie: `semantic-release`)
-
-Requirements
-------------
-
-NOTE: Role requires Fact Gathering by ansible!
-
-One of the following OS families:
-
-- Debian
-- RedHat
-- Windows
-
-Role Variables
---------------
-
-`crossplatform_message` : Message to be printed
-
-Dependencies
-------------
-
-None
-
-Example Playbook
-----------------
-
-```yaml
-- name: Test the role
-  hosts: localhost
-  roles:
-    - ansible-role-crossplatform
-```
-
-To test:
-
-```shell
-ansible-playbook tests/test.yml -i tests/inventory
-```
+{{ cookiecutter.project_description }}
 
 License
 -------
 
-[MIT][mit-link]
+[MIT](https://raw.githubusercontent.com/{{ cookiecutter.github_repo_owner}}/{{ cookiecutter.github_repo_name }}/main/LICENSE)
 
 Author Information
 ------------------
 
-@donhector
-
-[mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[mit-link]: https://raw.githubusercontent.com/drew-kun/ansible-mpd/master/LICENSE
-[galaxy-role-badge]: https://img.shields.io/ansible/role/56942?color=purple&label=galaxy&logo=ansible
-[galaxy-quality-badge]: https://img.shields.io/ansible/quality/56942
-[galaxy-link]: https://galaxy.ansible.com/donhector/crossplatform
-[ci-badge]: https://github.com/donhector/ansible-role-crossplatform/actions/workflows/ci.yml/badge.svg
-[ci-link]: https://github.com/donhector/ansible-role-crossplatform/actions/workflows/ci.yml
-[pre-commit-link]: https://github.com/pre-commit/pre-commit
-[pre-commit-badge]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
-[python-badge]: https://img.shields.io/github/pipenv/locked/python-version/donhector/ansible-role-crossplatform?color=green
-[commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[commitizen-link]: http://commitizen.github.io/cz-cli
+{{ cookiecutter.github_username }}

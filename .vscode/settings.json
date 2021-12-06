@@ -1,7 +1,6 @@
 {
   "files.associations": {
-      "*.yml": "ansible",
-      "**/.github/**/*.yml": "yaml"
+      ".gitlint": "ini"
   },
-  "python.pythonPath": "${workspaceFolder}/.venv/bin/python"
+  "python.pythonPath": ".venv/bin/python"
 }
