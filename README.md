@@ -1,25 +1,31 @@
-{{ cookiecutter.project_name }}
-=========
+# cookiecutter-semver-project
 
-[![CI badge](https://github.com/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.github_repo_name }}/actions/workflows/ci.yml/badge.svg)](https://github.com/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.github_repo_name }}/actions/workflows/ci.yml)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.github_repo_name }}/main/LICENSE)
-![Python version](https://img.shields.io/github/pipenv/locked/python-version/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.github_repo_name }}?color=green)
-[![pre-commit badge](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![semantic-release](https://img.shields.io/badge/semantic--release-conventionalcommits-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
-[![commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
-[![gitlint enabled](https://img.shields.io/badge/gitlint-enabled-orange)](https://github.com/jorisroovers/gitlint)
+Generic conventional commits project template for [Cookiecutter][cookiecutter].
 
-Description
-------------
+## Description
 
-{{ cookiecutter.project_description }}
+This project template will setup the tools for enforcing conventional commmits in your project along with semantic releases and other good practices
 
-License
--------
+To do so, this template leverages the following tools/technologies:
 
-[MIT](https://raw.githubusercontent.com/{{ cookiecutter.github_repo_owner}}/{{ cookiecutter.github_repo_name }}/main/LICENSE)
+- [pre-commit](https://pre-commit.com/) for enforcing commit message checks and other git hooks
+- [commitizen](https://github.com/commitizen-tools/commitizen) for entering guided commit messages
+- [gitlint](https://github.com/jorisroovers/gitlint) for detailed commit message validation
+- [semantic-release](https://github.com/semantic-release/semantic-release) for semantic versioning and releasing of the project
+- [github-actions](https://github.com/features/actions) for creating CI and CD github workflows
+- [github-issue-templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+- [github-dependabot](https://github.com/dependabot) for keeping dependencies secure and up to date
+- [github-stale](https://github.com/marketplace/stale) for managing stale issues and PRs
+- [github-funding](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository) for configuring Sponsors in Github
+- [yamllint](https://github.com/adrienverge/yamllint) for linting the YAML files included in this repo
+- [editorconfig](https://editorconfig.org/) for keeping consistent coding standards
 
-Author Information
-------------------
+## Usage
 
-{{ cookiecutter.github_username }}
+Requires [Cookiecutter][cookiecutter].
+
+```bash
+cookiecutter https://github.com/donhector/cookiecutter-semver-project
+```
+
+[cookiecutter]: https://github.com/cookiecutter/cookiecutter
