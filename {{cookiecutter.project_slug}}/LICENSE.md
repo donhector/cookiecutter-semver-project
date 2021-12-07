@@ -1,4 +1,4 @@
-MIT License
+# MIT License
 
 Copyright (c) {% now 'utc', '%Y' %} {{ cookiecutter.github_username }}
 
