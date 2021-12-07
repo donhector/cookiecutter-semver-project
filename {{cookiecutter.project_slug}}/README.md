@@ -22,4 +22,4 @@ If you encounter any problems, please [file an issue](https://github.com/{{ cook
 
 ## Author Information
 
-{{ cookiecutter.github_username }}
+[{{ cookiecutter.github_username }}](mailto:{{ cookiecutter.github_email }})

@@ -29,3 +29,18 @@ cookiecutter https://github.com/donhector/cookiecutter-semver-project
 ```
 
 [cookiecutter]: https://github.com/cookiecutter/cookiecutter
+
+This will bring up a commandline interface which will go through some options. Consult
+the documentation below for more information regarding these prompts.
+
+
+| Field                    | Default               | Description                                                                                               |
+|--------------------------|-----------------------|-----------------------------------------------------------------------------------------------------------|
+| `project_name`           | `My project`          | The project name. Might contain several words                                                             |
+| `project_slug`           | `my-project`          | Slug formatted project name.                                                                              |
+| `project_description`    | `My description`      | A brief description of the project. Used in *README.md*                                                   |
+| `pipenv_python_version`  | `3.9`                 | Python version to be used by Pipenv                                                                       |
+| `github_username`        | `donhector`           | Github user name. Used in *CODEOWNERS*, *FUNDING.yaml* and the likes                                      |
+| `github_email`           |                       | Github user email. Used in *README.md* and *CODE_OF_CONDUCT.md*                                           |
+| `github_repo_owner`      | `github_username`     | Github repo owner. Generally the Github username or organization                                          |
+| `github_repo_name`       | `project_slug`        | Github repo name. Repository name hosting the code                                                        |
