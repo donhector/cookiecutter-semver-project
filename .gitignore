@@ -1,9 +1,2 @@
 ### Pipenv
 .venv
-
-### Python
-*/__pycache__
-*.pyc
-
-### Misc
-.cache

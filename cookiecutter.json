@@ -1,11 +1,14 @@
 {
-  "project_name": "Your project name",
+  "project_name": "My project",
   "project_slug": "{{ cookiecutter.project_name.lower()|trim()|replace(' ', '-')|replace('.', '-') }}",
-  "project_description":"Your project description",
+  "project_description":"My description",
   "pipenv_python_version": "3.9",
   "github_username": "donhector",
   "github_email": "2475379+donhector@users.noreply.github.com",
   "github_repo_owner": "{{ cookiecutter.github_username }}",
   "github_repo_name": "{{ cookiecutter.project_slug }}",
-  "_copy_without_render": [".github/workflows/*"]
+  "_copy_without_render": [
+    ".github/workflows/*",
+    ".cz.toml"
+  ]
 }
