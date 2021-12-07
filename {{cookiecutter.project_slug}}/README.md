@@ -17,7 +17,7 @@ Description
 License
 -------
 
-Distributed under the terms of the [MIT](https://raw.githubusercontent.com/{{ cookiecutter.github_repo_owner}}/{{ cookiecutter.github_repo_name }}/main/LICENSE). {{ cookiecutter.project_name }} is free and open source software.
+Distributed under the terms of the [MIT](https://raw.githubusercontent.com/{{ cookiecutter.github_repo_owner}}/{{ cookiecutter.github_repo_name }}/main/LICENSE). *{{ cookiecutter.project_name }}* is free and open source software.
 
 Issues
 ------

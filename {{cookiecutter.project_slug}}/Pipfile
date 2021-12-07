@@ -10,7 +10,6 @@ commitizen = "*"
 gitlint = "*"
 
 [packages]
-cookiecutter = "*"
 
 [requires]
 python_version = "{{ cookiecutter.pipenv_python_version }}"
